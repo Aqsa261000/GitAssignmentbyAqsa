@@ -274,12 +274,10 @@ html {
     display: grid;
 }
 
-.eight :nth-child(7) {
-    margin: 0.5rem 0 0.5rem 0.5rem;
-}
+
 
 .eight :nth-child(8) {
-    margin: 0.5rem 0 0.5rem 0;
+    margin: 0.5rem 0 0.5rem 0.5rem;
 }
 
 .eight :nth-child(9) {
