@@ -196,6 +196,24 @@ html {
     margin: 0 0.5rem 0.5rem 0;
 }
 
+.six :nth-child(17) {
+
+    margin: 0.5rem 0 0.5rem 0.5rem;
+
+}
+
+.six :nth-child(18) {
+
+    margin: 0.5rem 0;
+}
+
+.six :nth-child(19) {
+
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+
+
 .seven {
     grid-area: seven;
     background-color: var(--background-color);
