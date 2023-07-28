@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Assignment by Aqsa Mehdi */
+html {
+    font-size: 62.5%;
+    /*1rem = 10px*/
+}
+:root{
+    --background-color:#2a2e41;
+    --white-color:#ffffff;
+    --box1:#01a787;
+    --box2:#fd825c;
+    --box3:#1bc1a1;
+    --box4:#fc6057;
+    --box5:#34daba;
+    --box6:#fda061;
+}
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: "one two three" "four five six" "seven eight nine";
+    background-color: var(--white-color);
+
+}
+
+.box1 {
+    background-color: var(--box1);
+    margin: 0.5rem;
+}
+
+.box2 {
+    background-color: var(--box2);
+    margin: 0.5rem;
+}
+
+.box3 {
+    background-color: var(--box3);
+    margin: 0.5rem;
+}
+
+.box4 {
+    background-color: var(--box4);
+    margin: 0.5rem;
+}
+
+.box5 {
+    background-color: var(--box5);
+    margin: 0.5rem;
+}
+
+.box6 {
+    background-color: var(--box6);
+    margin: 0.5rem;
+}
+
+.empty {
+    background-color: var(--background-color);
+    margin: 0.5rem;
+}
+
+.subone {
+    grid-area: subone;
+    background-color: var(--box4);
+    margin: 0.5rem;
+
+}
+
+.subtwo {
+    grid-area: subtwo;
+    background-color: var(--box2);
+    margin: 0.5rem;
+}
+
+.subthree {
+    grid-area: subthree;
+    background-color: var(--box6);
+    margin: 0.5rem;
+}
+
+.subfour {
+    grid-area: subfour;
+    background-color: var(--box1);
+    margin: 0.5rem;
+}
+
+.subfive {
+    grid-area: subfive;
+    background-color: var(--box3);
+    margin: 0.5rem;
+}
+
+.subsix {
+    grid-area: subsix;
+    background-color: var(--box5);
+    margin: 0.5rem;
+}
+
+
+.one {
+    grid-area: one;
+    background-color: var(--background-color);
+    margin: 1rem;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: "subone subtwo subthree" "subfour subfive subsix";
+    padding: 0.5rem;
+
+}
+
+.two {
+    grid-area: two;
+    background-color: var(--background-color);
+    margin: 1rem;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: "subone subone subthree" "subfour subfive subthree";
+    padding: 0.5rem;
+}
+
+.three {
+    grid-area: three;
+    background-color: var(--background-color);
+    margin: 1rem;
+    display: grid;
+    
+    grid-template-columns: repeat(3, 33.33%);
+    grid-template-areas: "subthree subthree subthree" "subfour subone subone" "subfour subone subone" "subfive subfive subfive";
+    padding: 0.5rem;
+}
+
+.four {
+    grid-area: four;
+    background-color: var(--background-color);
+    margin: 1rem;
+    display: grid;
+    
+    grid-template-columns: repeat(4, 25%);
+    grid-template-areas: "subtwo subtwo subone subone" "subtwo subtwo subone subone" "subfour subfive subfive subfive" "subfour subfive subfive subfive" "subfour subfive subfive subfive" "subthree subthree subthree subthree";
+    padding: 0.5rem;
+}
+
+.five {
+    grid-area: five;
+    background-color: var(--background-color);
+    margin: 1rem;
+    grid-template-columns: repeat(6, 16.66%);
+    padding: 0.5rem;
+    display: grid;
+
+}
+
+.six {
+    grid-area: six;
+    background-color: var(--background-color);
+    margin: 1rem;
+    grid-template-columns: repeat(4, 25%);
+    padding: 0.5rem;
+    display: grid;
+}
+
+.six .box4:first-child {
+    
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.six .box4:nth-child(2) {
+    
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.six :nth-child(9) {
+
+    margin: 0.5rem 0 0 0.5rem;
+
+}
+
+.six :nth-child(10) {
+
+    margin: 0.5rem 0.5rem 0 0;
+}
+
+.six :nth-child(13) {
+
+    margin: 0 0 0.5rem 0.5rem;
+}
+
+.six :nth-child(14) {
+
+    margin: 0 0.5rem 0.5rem 0;
+}
+
+.seven {
+    grid-area: seven;
+    background-color: var(--background-color);
+    margin: 1rem;
+    grid-template-columns: repeat(2, 50%);
+    padding: 0.5rem;
+    display: grid;
+}
+
+.seven :nth-child(3) {
+
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.seven :nth-child(4) {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    
+}
+
+.seven .box1 .box5:nth-child(1) {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.seven .box1 .box5:nth-child(2) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.seven :nth-child(5) {
+
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
+.seven :nth-child(6) {
+
+    margin: 0 0.5rem 0.5rem 0.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+
+}
+
+.seven .box1:nth-child(2) .box5:nth-child(1) {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.seven .box1:nth-child(2) .box5:nth-child(2) {
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+
+.eight {
+    grid-area: eight;
+    background-color: var(--background-color);
+    margin: 1rem;
+    grid-template-columns: repeat(5, 20%);
+    padding: 0.5rem;
+    display: grid;
+}
+
+.eight :nth-child(7) {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.eight :nth-child(8) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.eight :nth-child(9) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.eight :nth-child(10) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.eight :nth-child(11) {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.eight :nth-child(12) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.eight :nth-child(13) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.eight :nth-child(14) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.eight :nth-child(15) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.nine {
+    grid-area: nine;
+    background-color: var(--background-color);
+    margin: 1rem;
+    grid-template-columns: repeat(3, 33.33%);
+    padding: 0.5rem;
+    display: grid;
+
+}
+
+.nine :nth-child(1) {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.nine :nth-child(2) {
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+.nine :nth-child(3) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.nine :nth-child(4) {
+    margin: 0.5rem 0.5rem 0 0.5rem;
+}
+
+.nine :nth-child(5) {
+    margin: 0.5rem 0 0.5rem 0.5rem;
+}
+
+.nine :nth-child(6) {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.nine :nth-child(7) {
+    margin: 0 0.5rem 0.5rem 0.5rem;
+}
+
